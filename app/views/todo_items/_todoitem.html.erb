@@ -1,0 +1,25 @@
+<div id="<%=dom_id(todo_item)%>" class="todo_show_container" >
+  <article class="todo__show--data">
+    <section class="todo__show--table">
+      <div class="todo__show--attribute--name" >
+        <%= label_tag :title, "#{t(:title, scope: [:todo_item])}"  %>
+        <h6> <%= todo_item.title  %> </h6>
+      </div>
+      <div class="todo__show--attribute--name" >
+        <%= label_tag :description, "#{t(:description, scope: [:todo_item])}"  %>
+        <h6> <%= todo_item.description  %> </h6>
+      </div>
+      <div class="todo__show--attribute--name" >
+        <%= label_tag :completed, "#{t(:is_completed, scope: [:todo_item])}"  %>
+        <h6> <%=  todo_item.completed ? "#{t(:completed, scope: [:todo_item])}" : "#{t(:not_completed, scope: [:todo_item])}"%>  </h6>
+      </div>
+      <%= link_to edit_todo_item_path(id: todo_item.id), data: { turbo: false }, class: 'buttons_todo'  do %>
+        <%= icon('pencil') %>
+      <%end%>
+      <%= button_to todo_item_path(id: todo_item.id), method: :delete, class: 'todo_delete_button' do %>
+        <%= icon('trash-redB') %>
+      <%end%>
+    </section>
+  </div>
+</article>
+</div>

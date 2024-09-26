@@ -1,0 +1,21 @@
+es:
+  todo_item:
+    index: "Todo Items"
+    edit: "Editar Todo Item"
+    title: "Titulo"
+    title_placeholder: "Titulo del Todo Item"
+    description: "Descripcion"
+    description_placeholder: "Descripcion del Todo Item"
+    completed: "Completado"
+    todo_list: "Lista"
+    not_completed: "Sin completar"
+    is_completed: "¿Esta completado?"
+  activerecord:
+    errors:
+      models:
+        todo_item:
+          attributes:
+            title:
+              blank: "El título no puede estar en blanco"
+            description:
+              blank: "La descripcion no puede estar en blanco"

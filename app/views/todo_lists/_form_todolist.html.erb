@@ -1,0 +1,12 @@
+<div class="todo_show_container">
+  <article class="todo__show--data" id="todo__show--data">
+    <section class="todo__show--table form_todo">
+      <div class="todo__show--attribute--name">
+        <%= form.label :name, "#{t(:name, scope: [:todo_list])} *" %>
+        <%= form.text_field :name, placeholder: "#{t(:name_placeholder, scope: [:todo_list])}" %>
+      </div>
+      <%= form.submit t(:submit), class: 'create_todo' %>
+    </section>
+    <div id=<%= feed_back_name_container %>></div>
+  </article>
+</div>

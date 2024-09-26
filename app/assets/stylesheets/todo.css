@@ -1,0 +1,78 @@
+.todo_show_container{
+  padding: 0 1.5rem 1.875rem 1.5rem;
+}
+
+.todo__show--data{
+  background: #fff !important;
+  border: 1px solid #3C8DBC;
+  margin: 1rem;
+  border-top: 5px solid #3C8DBC;
+  padding: 1.875rem;
+  border-radius: .625rem;
+}
+
+.todo__show--table {
+  display: flex;
+  row-gap: .625rem;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.todo__show--actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .625rem;
+  align-items: center;
+  grid-column: span 2;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.todo__show--attribute--name {
+  margin: 0 10px 9px;
+  width: 100%;
+  align-content: flex-end;
+}
+
+.todo__show--attribute--name > h6 {
+  font-size: .9375rem;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  color: #585858;
+}
+
+.todo_delete_button{
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.create_todo{
+  color: #23527C;
+  width: 170px !important;
+  border: 2px solid #23527C;
+  border-radius: 10px;
+  margin-left: 0.625rem;
+  background: none;
+  text-transform: uppercase;
+  padding: 0.938rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+}
+
+.form_todo{
+  border-bottom: 0 !important;
+}
+
+.container_form{
+  margin: 1.5rem;
+}
+
+.buttons_todo, form{
+  margin: 0 10px;
+  align-content: center;
+}
+

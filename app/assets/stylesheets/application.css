@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+ textarea {
+  width: 245px;
+  height: 30px;
+ }
+
+ .text-danger {
+  color: red !important;
+  font-style: italic;
+  font-weight: 400;
+}
+
+select, input, textarea {
+  padding: 4px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+input:not(:read-only), button, select, textarea {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color:  #23527C;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+}

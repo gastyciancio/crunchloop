@@ -1,0 +1,25 @@
+<div class="todo_show_container">
+  <article class="todo__show--data" id="todo__show--data">
+    <section class="todo__show--table form_todo">
+      <div class="todo__show--attribute--name">
+        <%= form.label :title, "#{t(:title, scope: [:todo_item])} *" %>
+        <%= form.text_field :title, placeholder: "#{t(:title_placeholder, scope: [:todo_item])}" %>
+      </div>
+      <div class="todo__show--attribute--name">
+        <%= form.label :description, "#{t(:description, scope: [:todo_item])} *" %>
+        <%= form.text_area :description, placeholder: "#{t(:description_placeholder, scope: [:todo_item])}" %>
+      </div>
+      <div class="todo__show--attribute--name">
+        <%= form.label :completed, "#{t(:completed, scope: [:todo_item])}" %>
+        <%= form.check_box :completed %>
+      </div>
+      <div class="todo__show--attribute--name">
+        <%= form.label :todo_list, "#{t(:todo_list, scope: [:todo_item])}" %>
+        <%= form.hidden_field :todo_list_id, value: todo_list.id , readonly: true %>
+        <%= form.text_field :todo_list, value: todo_list.name , readonly: true %>
+      </div>
+      <%= form.submit t(:submit), class: 'create_todo' %>
+    </section>
+    <div id=<%= feed_back_name_container %>></div>
+  </article>
+</div>

@@ -1,0 +1,19 @@
+<div id="<%=dom_id(todo_list)%>" class="todo_show_container" >
+  <article class="todo__show--data">
+    <section class="todo__show--table">
+      <div class="todo__show--attribute--name" >
+        <%= label_tag :name, "#{t(:name, scope: [:todo_list])}"  %>
+        <h6> <%= todo_list.name  %> </h6>
+      </div>
+      <%= link_to todo_list_todo_items_path(todo_list_id: todo_list.id), data: { turbo: false }, class: 'buttons_todo'  do %>
+        <%= icon('blue_folder') %>
+      <%end%>
+      <%= link_to edit_todo_list_path(id: todo_list.id), data: { turbo: false }, class: 'buttons_todo'  do %>
+        <%= icon('pencil') %>
+      <%end%>
+      <%= button_to todo_list_path(id: todo_list.id), method: :delete, class: 'todo_delete_button' do %>
+        <%= icon('trash-redB') %>
+      <%end%>
+    </section>
+  </article>
+</div>

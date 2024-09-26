@@ -1,0 +1,14 @@
+en:
+  todo_list:
+    name: "Name"
+    name_placeholder: "Name of the Todo List"
+    index: "Todo Lists"
+    edit: "Edit Todo List"
+    todo_items: "Todo Items"
+  activerecord:
+    errors:
+      models:
+        todo_list:
+          attributes:
+            name:
+              blank: "Name can't be blank"

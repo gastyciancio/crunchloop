@@ -1,0 +1,6 @@
+<h1><%= t(:edit, scope: [:todo_item]) %></h1>
+<div class='container_form'>
+  <%= form_with(model: todo_item, url: todo_item_path(id: todo_item.id), method: :put ) do |form| %>
+    <%= render partial: 'todo_items/form_todoitem', locals: {todo_list: todo_list, todo_item: todo_item, form: form, feed_back_name_container: 'update_todoitem_error' } %>
+  <%end%>
+</div>
