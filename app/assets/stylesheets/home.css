@@ -1,0 +1,10 @@
+.home_buttons {
+  color: #23527C;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 50px;
+  text-transform: uppercase;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}

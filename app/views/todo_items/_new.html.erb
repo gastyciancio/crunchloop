@@ -1,0 +1,6 @@
+<h1><%= t(:index, scope: [:todo_item]) %></h1>
+<div class='container_form'>
+  <%= form_with(model: todo_item, url: todo_items_path, method: :post ) do |form| %>
+    <%= render partial: 'todo_items/form_todoitem', locals: {todo_list: @todo_list || todo_list, todoitem: todo_item, form: form, feed_back_name_container: 'create_todoitem_error' } %>
+  <%end%>
+</div>

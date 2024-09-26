@@ -1,0 +1,21 @@
+en:
+  todo_item:
+    index: "Todo Items"
+    edit: "Edit Todo Item"
+    title: "Title"
+    title_placeholder: "Title of the Todo Item"
+    description: "Description"
+    description_placeholder: "Description of the Todo Item"
+    completed: "Completed"
+    todo_list: "Belongs to Todo List"
+    not_completed: "Not completed"
+    is_completed: "¿Is completed?"
+  activerecord:
+    errors:
+      models:
+        todo_item:
+          attributes:
+            title:
+              blank: "Title can't be blank"
+            description:
+              blank: "Description can't be blank"
