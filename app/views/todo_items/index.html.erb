@@ -1,0 +1,9 @@
+<article>
+  <%= turbo_frame_tag "new_todoitem" do %>
+    <%= render partial: 'todo_items/new', locals: { todo_item: TodoItem.new, todo_lists: @todo_lists } %>
+  <%end%>
+  <% @todo_items.each do |todo_item|  %>
+    <%= render partial: 'todo_items/todoitem', locals: { todo_item: todo_item }  %>
+  <% end %>
+  <%= turbo_frame_tag "added_new_todoitem" do %><%end%>
+</article>

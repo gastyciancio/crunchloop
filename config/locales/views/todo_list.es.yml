@@ -1,0 +1,14 @@
+es:
+  todo_list:
+    name: "Nombre"
+    name_placeholder: "Ingrese el nombre"
+    index: "Todo Lists"
+    edit: "Editar Todo List"
+    todo_items: "Todo Items"
+  activerecord:
+    errors:
+      models:
+        todo_list:
+          attributes:
+            name:
+              blank: "El nombre no puede estar en blanco"
